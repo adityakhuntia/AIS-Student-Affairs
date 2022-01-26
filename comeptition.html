@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+      <link rel="stylesheet" href="static/navbar.css">
+      <!-- Boxicons CDN Link -->
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="icon" href="static/logo_favicon.png" type="image/x-icon">
+
+   </head>
+   
+   
+   <body>
+      <div class="sidebar">
+         <div class="logo-details">
+            <a href="home.html"><img class="icon" src="static/logo.svg" style="height: 75px;"></img></a>
+
+
+            <!--<div class="logo_name" >AIS SAKET STUDENT PORTAL</div>-->
+            <i class='bx bx-menu' id="btn" ></i>
+         </div>
+         <ul class="nav-list">
+
+            <li>
+               <a href="home.html">
+               <i class='bx bx-grid-alt'></i>
+               <span class="links_name">DASHBOARD</span>
+               </a>
+               <span class="tooltip">DASHBOARD</span>
+            </li>
+
+            <li>
+               <a href="comeptition.html">
+               <i class='bx bx-trophy' ></i>
+               <span class="links_name">Competitions</span>
+               </a>
+               <span class="tooltip">Competitions</span>
+            </li>
+            
+            <li>
+               <a href="amicrest.html">
+               <i class='bx bx-pen' ></i>
+               <span class="links_name">Amicrest</span>
+               </a>
+               <span class="tooltip">Amicrest</span>
+            </li>
+            
+            <li>
+               <a href="yearbook.html">
+               <i class='bx bx-book' ></i>
+               <span class="links_name">YearBooks</span>
+               </a>
+               <span class="tooltip">Yearbooks</span>
+            </li>
+            
+            
+            
+            <li>
+               <a href="#">
+               <i class='bx bx-cog' ></i>
+               <span class="links_name">Setting</span>
+               </a>
+               <span class="tooltip">Setting</span>
+            </li>
+           
+           
+           
+           
+            <li class="profile">
+               <div class="profile-details">
+                  <!--<img src="profile.jpg" alt="profileImg">-->
+                  <div class="name_job">
+                     <div class="name">Aditya Khuntia</div>
+                     <div class="job">7033</div>
+                  </div>
+               </div>
+               <i class='bx bx-log-out' id="log_out" ></i>
+            </li>
+         
+        
+        
+        </ul>
+      </div>
+      
+      
+      
+      <!-- MAIN HOME PAGE BEGIN HERE-->
+      <section class="home-section">
+        <header class="text_head" style="font-family: LR; font-size: 50px;">COMPETITION CANVAS</header>
+
+        <div class="comp_gal" style="display: flex; width: 100%; align-items: center;">
+            
+            <div class="comp_card">
+                <div class="comp_container">
+                <img src="https://images.unsplash.com/photo-1635070041409-e63e783ce3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=779&q=80" height="200px" >
+                  <h4><b>Dhananjay Mohan Science Symposium</b></h4> 
+                  <p>Individual</p>
+                  <p>Breif Descp</p>
+                  <button class="comp_submit">Apply</button> 
+                </div>
+              </div>
+
+              <div class="comp_card">
+                <div class="comp_container">
+                    <img src="https://images.unsplash.com/photo-1564325724739-bae0bd08762c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2NpZW5jZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60" height="200px" >
+                    <h4><b>Dhananjay Mohan Science Symposium</b></h4> 
+                    <p>Individual</p>
+                    <p>Breif Descp</p>
+                    <button class="comp_submit">Apply</button> 
+                </div>
+              </div>
+
+              <div class="comp_card">
+                <div class="comp_container">
+                  <h4><b>John Doe</b></h4> 
+                  <p>Architect & Engineer</p> 
+                </div>
+              </div>
+        </div>
+         
+       
+      </section>
+
+
+
+
+
+      <footer class="flex-container">
+
+         <div style="flex-grow: 4;"><p>A Student Council Initiative</p></div>
+         <!--<div style="flex-grow: 1; right: 0;"><img src="" height="100%">-->
+      </div>
+      
+      </footer>      
+      
+
+
+
+
+
+      <script src="/static/sidebar.js"></script>
+      <script src="comp.js"></script>
+   </body>
+</html>
