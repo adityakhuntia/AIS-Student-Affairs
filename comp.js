@@ -11,11 +11,15 @@ const data = [];
 window.onload = function init(){
     console.log('ready');
     fetch(url)
+    
     .then(res => res.text())
     .then(rep => {
+
+        document.querySelector(".spinner-wrapper").style.display = "none"
+
         const jsData = JSON.parse(rep.substring(47).slice(0,-2));
         var main = jsData.table.rows
-        console.log(Object.keys(main).length)
+        console.log(Object.keys(main).length)      
 
         for(let i=1;i<Object.keys(main).length;i++){
             
@@ -28,20 +32,16 @@ window.onload = function init(){
             title.innerHTML=(main[String(i)]["c"]["0"]["v"]);
             desc.innerHTML=(main[String(i)]["c"]["1"]["v"]);
             level.innerHTML=(main[String(i)]["c"]["2"]["v"])+"<br>"+(main[String(i)]["c"]["5"]["v"]);
+        
         }
         //console.log(main["1"]["c"]["0"]["v"])
     })
-
 
 
     /*(for(let i=1;i<Object.keys(main).length;i++){
         console.log(i)
     }*/
 }
-
-
-
-
 
 
 
